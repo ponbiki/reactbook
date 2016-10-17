@@ -12,10 +12,11 @@
 <script src="react/build/react-dom.js"></script>
 <script>
     ReactDOM.render(
-            React.DOM.h1({
-                id: "my-heading"
-            },
-                    "Hello World!"),
+            React.DOM.h1(
+                    {id: "my-heading"},
+                    React.DOM.span(null, "Hello"),
+                    " World!"
+            ),
             document.getElementById("app")
     );
 </script>
